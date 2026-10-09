@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navigation-center{
+        display: flex;
+        gap: 60px;
+    }
+    .navigation h1 {
+        margin-left: 50px;
+    }
+    .navigation button {
+        background: rgb(34, 88, 196);
+        border-radius: 20px;
+        color: white;
+        border: none;
+        padding: 16px 30px;
+    }
+    .card {
+      width: 300px;
+      height: 300px;
+      background:wheat;
+      box-shadow:black;
+      position: relative;
+      border-radius: 24px;
+      text-align: left;
+    }
+    .card h3 {
+        margin-left: 35px;
+    }
+    .card h1 {
+        margin-left: 15px;
+    }
+    .card h4 {
+        margin-left: 15px;
+        color: grey;
+    }
+    .card p {
+        margin-left: 40px ;
+    }
+    .tag {
+      width: fit-content;
+      height: fit-content;
+      background: blue;
+      border-radius: 24px;
+      padding: 6px 10px;
+      color: white;
+      transform: rotate(15deg);
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .banner {
+        height: 200px;
+        background-color: brown;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 50px;
+        align-items: center;
+        justify-content: center;        
+    }
+    .banner h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .banner button {
+        text-align: center;
+        border-radius: 24px;
+        border:  none;
+        background-color: black;
+        color: white;
+        padding: 16px 20px;
+    }
+
+    .cards {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .downinfo {
+        height: 200px;
+        background-color: brown;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+    }
+    .downinfo button {
+        position: absolute;
+        left: 30px;
+        text-align: center;
+        border-radius: 24px;
+        border:  none;
+        background-color: blue;
+        color: white;
+        padding: 12px 20px;  
+    }
+    .filtr {
+        width: 1000px;
+        height: 1200px;
+        background-color: antiquewhite;
+        border-radius: 20px;
+    }
+    .filtrcards {
+        display: flex;
+        gap: 25px;
+        margin: 30px 50px;
+    }
+    .search {
+        background: whitesmoke;
+        padding: 15px;
+        border-radius: 15px;
+        border: 2px solid darkolivegreen;
+        box-sizing: border-box;
+        margin-left: 80px;
+        
+    }
+    .filter {
+        margin-bottom: 8px;
+        font-size: 20px;
+        color: #777;
+    }
+    .filter-title {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        color:black;
+        justify-content: center;
+        font-weight: bold;
+        align-items: center;
+    }
+    .filter-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 8px;
+        font-size: 20px;
+        color: #777;
+    }
+    </style>
+
+    <body>
+
+    <nav class="navigation">
+        <h1>mattee</h1>
+        <div class="navigation-center">
+            <p>Вакансии</p>
+            <p>Работодатели</p>
+        </div>
+        <button>Опубликовать</button>
+    </nav>
+
+    <div class="banner">
+        <h2>
+            Больше вакансий<br>
+            в telegram-канале
+        </h2>
+        <button>
+            Перейти в ТГ канал
+        </button>
+
+    </div>
+    <div class="filtrcards">
+        <div class="filtr">
+            <div class="filter-group">
+                <input type="text" class="search" placeholder="Поиск">
+                <div class="filter-title">Формат</div>
+                <div class="filter-item">Парт-тайм <input type="checkbox"></div>
+                <div class="filter-item">Фулл-тайм <input type="checkbox"> </div>
+                <div class="filter-item">Стажировка <input type="checkbox"> </div>
+                
+                    
+                <div class="filter-title">Грейд</div>
+                <div class="filter-item">junior<input type="checkbox"></div>
+                <div class="filter-item">Middle<input type="checkbox"></div>
+                <div class="filter-item">Senoirt<input type="checkbox"></div>
+
+                <div class="filter-title">Формат</div>
+                <div class="filter-item">Удаленно<input type="checkbox"></div>
+                <div class="filter-item">Офис<input type="checkbox"></div>
+                <div class="filter-item">Гибрид<input type="checkbox"></div>               
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="cardtext">
+                <h3>Т-Банк</h3>
+                <h1>Художник концепт арта</h1>
+                <h4>Location</h4>
+            </div>
+            <p> Tags</p>
+            <div class="tag">Опубликовать</div>
+        </div>
+        <div class="card">
+            <div class="cardtext">
+                <h3>Т-Банк</h3>
+                <h1>Художник концепт арта</h1>
+                <h4>Location</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtext">
+                <h3>Т-Банк</h3>
+                <h1>Художник концепт арта</h1>
+                <h4>Location</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtext">
+                <h3>Т-Банк</h3>
+                <h1>Художник концепт арта</h1>
+                <h4>Location</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtext">
+                <h3>Т-Банк</h3>
+                <h1>Художник концепт арта</h1>
+                <h4>Location</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtext">
+                <h3>Т-Банк</h3>
+                <h1>Художник концепт арта</h1>
+                <h4>Location</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtext">
+                <h3>Т-Банк</h3>
+                <h1>Художник концепт арта</h1>
+                <h4>Location</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtext">
+                <h3>Т-Банк</h3>
+                <h1>Художник концепт арта</h1>
+                <h4>Location</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtext">
+                <h3>Т-Банк</h3>
+                <h1>Художник концепт арта</h1>
+                <h4>Location</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="downinfo">
+        <button class="downbutton">Опубликовать Вакансию</button>
+        <h1 class="logo"> mattee</h1>
+        <h4>© 2025</h4>
+    </div>
+    </body>
+</html>
